@@ -74,7 +74,6 @@ public class Tests {
                 .when()
                 .get("/api/unknown")
                 .then()
-                .contentType(ContentType.JSON)
                 //.log().all()
                 .spec(Specifications.responseSpec200())
                 .extract().as(Resource.class);
